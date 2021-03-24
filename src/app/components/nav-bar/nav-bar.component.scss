@@ -1,0 +1,16 @@
+#sidebar.active {
+    margin-left: -17rem;
+    
+    }
+    #sidebar{
+    padding: 50px;
+    }
+    @media (max-width: 768px) {
+    #sidebar {
+    margin-left: -17rem;
+    }
+    #sidebar.active {
+    margin-left: 0;
+    }
+    }
+    

@@ -1,0 +1,115 @@
+body
+{
+font-family: 'source code pro', Calibri, serif;
+margin: 0px;
+padding: 0px;
+}
+nav
+{
+width: 100%;
+background-color: #212121;
+}
+nav > ul{
+margin: 0px;
+padding: 0px;
+}
+nav > ul::after{
+content: "";
+display: block;
+clear: both;
+}
+nav > ul > li{
+float: left;
+position: relative;
+}
+nav > ul > li > a{
+padding: 20px 30px;
+color: #fff;
+}
+nav > ul > li:hover a{
+padding: 15px 30px 20px 30px;
+}
+nav li{
+list-style-type: none;
+}
+.sous-menu{
+display: none;
+}
+nav a{
+display: inline-block;
+text-decoration: none;
+}
+nav li:hover .sous-menu{
+display: inline-block;
+top: 100%;
+position: absolute;
+left: 0px;
+padding: 0px;
+z-index: 1000;
+}
+.sous-menu li{
+border-bottom: 1px solid #ccc;
+}
+.sous-menu li a{
+padding: 15px 30px;
+font-size: 13px;
+color: #222538;
+width: 270px;
+}
+.menu-html:hover{
+border-top: 5px solid #dd2c00;
+background-color: rgba(221, 44, 00, 0.15);
+}
+.menu-css:hover{
+border-top: 5px solid #64dd17;
+background-color: rgba(100, 221, 23, 0.15);
+}
+.menu-java:hover{
+border-top: 5px solid #2269FF;
+background-color: rgba(34, 105, 255, 0.15);
+}
+.menu-python:hover{
+border-top: 5px solid #ffff00;
+background-color: rgba(255, 255, 00, 0.15);
+}
+.menu-php:hover{
+border-top: 5px solid #ab47bc;
+background-color: rgba(171, 71, 188, 0.15);
+}
+
+.menu-html .sous-menu{
+background-color: rgb(240, 60, 10);
+}
+.menu-css .sous-menu{
+background-color: rgb(110, 240, 40);
+}
+.menu-java .sous-menu{
+background-color: rgb(40, 110, 271);
+}
+
+.menu-python .sous-menu{
+background-color: rgb(270,270,40);
+}
+.menu-php .sous-menu{
+background-color: rgb(185, 90, 200);
+}
+.sous-menu li:hover a{
+color: #eee;
+font-weight: bold;
+}
+.menu-html .sous-menu li:hover{
+background-color: rgb(260, 80, 40);
+}
+.menu-css .sous-menu li:hover{
+background-color: rgb(130, 250, 70);
+}
+.menu-java .sous-menu li:hover{
+background-color: rgb(80, 120, 250);
+}
+.menu-python .sous-menu li:hover{
+background-color: rgb(260, 260, 60);
+}
+.menu-php .sous-menu li:hover{
+background-color: rgb(195, 110, 220);
+}
+

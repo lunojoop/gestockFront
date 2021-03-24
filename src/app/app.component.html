@@ -1,0 +1,49 @@
+<div>
+    <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <ul class="menu-deroulant">
+    <li><a class="nav-item nav-link" routerLink="/">Home</a></li>
+    <li class="menu-html"><a class="nav-item nav-link" href="#">Utilisateur</a>
+    
+    <ul class="sous-menu">
+    <li><a href="#">créer un utilisateur</a></li>
+    <li><a href="#">modifier un utilisateur</a></li>
+    <li><a href="#">supprimer un utilisateur</a></li>
+    </ul>
+    </li>
+    <li class="menu-css"><a class="nav-item nav-link" routerLink="#">Entrée</a>
+    
+    <ul class="sous-menu">
+    <li><a href="#">faire une entrée</a></li>
+    <li><a href="#">historique entrée</a></li>
+    </ul>
+    </li>
+    <li class="menu-java"><a class="nav-item nav-link" routerLink="#">Sortie</a>
+    
+    <ul class="sous-menu">
+    <li><a href="#">initiation javascript</a></li>
+    <li><a href="#">cours javascript</a></li>
+    <li><a href="#">exercices javascript</a></li>
+    </ul>
+    </li>
+    <li class="menu-python"><a class="nav-item nav-link" routerLink="#">Retour</a>
+    
+    <ul class="sous-menu">
+    <li><a href="#">initiation python</a></li>
+    <li><a href="#">cours python</a></li>
+    <li><a href="#">exercices python</a></li>
+    </ul>
+    </li>
+    <li class="menu-php"><a class="nav-item nav-link" routerLink="#">Inventaire</a>
+    
+    <ul class="sous-menu">
+    <li><a href="#">initiation php</a></li>
+    <li><a href="#">cours php</a></li>
+    <li><a href="#">exercices php</a></li>
+    </ul>
+    </li>
+    <li><a class="nav-item nav-link" (click)="logout()">Déconnecter</a></li>
+    </ul>
+    </nav>
+    </div>
+    
+<router-outlet></router-outlet>
